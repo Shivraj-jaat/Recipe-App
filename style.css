@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #2b1d0f;
+    color: white;
+
+}
+
+header nav {
+    background-color: #212121;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    z-index: 1;
+}
+
+header nav h1 {
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+header nav form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.searchBox {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff5722;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e64a19;
+}
+
+.recipe-container {
+    text-align: center;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    width: 80%;
+    margin: 10px auto;
+    padding: 20px;
+    place-items: center;
+
+}
+
+.recipe {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    border-radius: 7px;
+    box-shadow: 0px 5px 10px rgba(78, 73, 73, 0.1);
+    cursor: pointer;
+    max-width: 350px;
+}
+
+.recipe img {
+    height: 300px;
+}
+
+.recipe h2 {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.recipe p {
+    font-size: 14px;
+    padding: 0 10px 10px 10px;
+}
+
+.recipe button {
+    font-size: 15x;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    margin: 18px auto;
+    background-color: #f44336;
+    color: #fff;
+}
+
+.recipe-details {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    background-color: #694c2f;
+    border-radius: 12px;
+    width: 40%;
+    height: 60%;
+    padding: 20px;
+    font-size: 15px;
+    transition: all 0.5s ease-in-out;
+    overflow-y: scroll;
+}
